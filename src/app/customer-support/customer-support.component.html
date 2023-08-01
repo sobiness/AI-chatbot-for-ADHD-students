@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <br>
+                <div class="card">
+                    <h4 class="card-header center" style="font-size: 25px;">SmartyTalk >_<</h4>
+                    <div class="card-body">
+                        <h6 class="card-title center" style="font-size: 20px;">The Super-Friendly Chatbot for Curious Kids!</h6>
+                        <h2 class="center" style="font-size: 15px;">For kids of age 5 to 15 :)</h2>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label for="age" style="font-size: 18px; font-weight: 600;">Select Age: </label>
+                                <input type="number" value="5" min="5" max="15" style="font-size: 20px; margin: 5px;" [(ngModel)]="age">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="frame-box">
+                                  <div *ngFor="let item of chatConversation">
+                                    <div class="user-message" *ngIf="item.person === 'You'">
+                                      <p class="message">{{ item.person }}: {{ item.response }}</p>
+                                    </div>
+                                    <div class="bot-answer" *ngIf="item.person === 'Mr Bot'">
+                                      <p class="message">{{ item.person }}: {{ item.response }}</p>
+                                    </div>
+                                  </div>
+                                  <div><img src="../../assets/ZNeT.gif" *ngIf="showSpinner" width="50px" height="50px"></div>
+                                </div>
+                                <br>
+                                    <textarea row="3" cols="15" class="form-control" [(ngModel)]="promptText" placeholder="Just type in simple terms on which you want information."></textarea>
+                                    <br>
+                                        <button class="btn btn-primary push-right" (click)="checkResponse()">Send</button>
+                                    </div>
+                                    <div class="col-md-2">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+

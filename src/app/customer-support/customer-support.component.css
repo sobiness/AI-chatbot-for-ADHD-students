@@ -1,0 +1,125 @@
+/* Add trendy Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/* Global Styling */
+body {
+  font-family: 'Poppins', sans-serif; /* Use Poppins font for the entire page */
+  background-color: #f8f8f8; /* Light gray background */
+}
+
+
+.container {
+  max-width: 100% !important;
+  margin: 0px !important;
+}
+
+/* Chatbox Styling */
+.card-header.center {
+  text-align: center;
+  background-color: #ffca4e; /* Vibrant yellow header */
+  color: #2c3e50; /* Dark blue text */
+  font-size: 24px;
+  font-weight: 500;
+  padding: 15px;
+  border-bottom: none; /* Remove default border */
+}
+
+.card-body {
+  background-color: #f9e79f; /* Pale yellow background */
+  padding: 15px;
+}
+
+.frame-box {
+  border: 2px solid #f9ca54; /* Light orange border */
+  padding: 20px;
+  min-height: 400px;
+  max-height: 400px;
+  overflow-y: scroll;
+  background-color: #fef9e7; /* Off-white chat frame background */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.padding {
+  padding: 5px;
+  font-size: 14px;
+}
+
+/* Chat Conversation Styling */
+.card-text {
+  color: #2c3e50; /* Dark blue text */
+}
+
+.person {
+  font-style: italic;
+  font-weight: bold;
+  color: #8e44ad; /* Purple text */
+}
+
+.bot {
+  font-weight: bold;
+  color: #27ae60; /* Green text */
+}
+
+/* User Input Textarea Styling */
+textarea.form-control {
+  color: #2c3e50; /* Dark blue text */
+  background-color: #f9e79f; /* Pale yellow background */
+  border: 1px solid #f9ca54; /* Light orange border */
+  border-radius: 5px; /* Rounded corners */
+  resize: none; /* Disable textarea resize */
+}
+
+/* "Send" Button Styling */
+.btn-primary {
+  background-color: #f39c12; /* Orange button background */
+  border-color: #f39c12; /* Orange button border */
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Add smooth transition on hover */
+}
+
+.btn-primary:hover {
+  background-color: #e67e22; /* Slightly darker orange on hover */
+}
+
+/* Spinner Styling */
+img[src="../../assets/ZNeT.gif"] {
+  filter: invert(100%); /* Change the spinner color to yellow */
+}
+.frame-box {
+  border: dotted 2px orange;
+  padding: 20px;
+  min-height: 400px;
+  max-height: 400px;
+  overflow-y: scroll;
+  background-color: #fff; /* Optional: Set a background color for the chatbox */
+}
+
+/* Style for user's message */
+.user-message {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.user-message .message {
+  background-color: #ffd700; /* Yellow background color for user message */
+  color: #333; /* Text color for user message */
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%; /* Set a maximum width for user message to prevent it from overflowing */
+}
+
+/* Style for chatbot's answer */
+.bot-answer {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.bot-answer .message {
+  background-color: #00ced1; /* Turquoise background color for chatbot answer */
+  color: #fff; /* Text color for chatbot answer */
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%; /* Set a maximum width for chatbot answer to prevent it from overflowing */
+}
